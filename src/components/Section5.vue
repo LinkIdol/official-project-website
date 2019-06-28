@@ -14,7 +14,7 @@
           <p>我们从同人出身，自然也明白同人对于官方的重要意义。就冲着这么可爱的角色，画师们还没有开始冲动吗！</p>
         </div>
         <p>
-          <a href="https://pan.baidu.com/s/12bQ5lDrl2XstXuyzvpP-Iw">立即下载 LinkIdol 表情包</a> | 提取码gfxf
+          <a href="https://pan.baidu.com/s/12bQ5lDrl2XstXuyzvpP-Iw" target="_blank">立即下载 LinkIdol 表情包</a> | 提取码gfxf
         </p>
         <div class="social">
           <div class="wechat">
