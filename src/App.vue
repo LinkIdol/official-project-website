@@ -11,6 +11,7 @@
       <ul>
         <li v-for="(item, i) in menu" :key="i" @click="jumpTo(i)" :class="{'active': active === i}">
           <div>
+            <div class="yellow">{{topSub[i]}}</div>
             {{item}}
           </div>
         </li>
@@ -43,7 +44,8 @@ export default {
         onLeave: this.onLeave,
       },
       active: 0,
-      menu: ['开篇', '币娘展示', '插画节选', '时间轴', '社团简介']
+      menu: ['开篇', '币娘展示', '插画节选', '时间轴', '社团简介'],
+      topSub: ['Start', 'Showcase', 'Illusrations', 'Timeline', 'Circle']
     }
   },
   mounted() {
@@ -70,6 +72,7 @@ export default {
   "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 1200px;
 }
 html, body {
   margin: 0;
@@ -125,6 +128,9 @@ html, body {
         background: #F7B500;
       }
     }
+    .yellow {
+      display: none;
+    }
   }
   .active {
     color: #000000;
@@ -133,7 +139,13 @@ html, body {
     &::before {
       background: #F7B500;
     }
-    >div:first-child {
+    .yellow {
+      display: block;
+      color: #FFD553;
+      font-size: 13px;
+      line-height: 13px;
+    }
+    /*>div:first-child {
       &::before {
         content: 'Showcase';
         display: block;
@@ -141,7 +153,7 @@ html, body {
         font-size: 13px;
         line-height: 13px;
       }
-    }
+    }*/
   }
 }
 </style>
